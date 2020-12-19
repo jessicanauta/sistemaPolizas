@@ -7,15 +7,9 @@ import java.util.List;
 import java.util.Random;
 
 import javax.annotation.PostConstruct;
-import javax.faces.application.FacesMessage;
+import javax.enterprise.context.SessionScoped;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-import javax.faces.bean.ViewScoped;
-import javax.faces.context.FacesContext;
 import javax.inject.Inject;
-import javax.sound.midi.Soundbank;
-
-import org.hibernate.validator.internal.util.privilegedactions.NewProxyInstance;
 
 import ec.edu.ups.modelo.Cliente;
 import ec.edu.ups.negocio.ClienteON;
