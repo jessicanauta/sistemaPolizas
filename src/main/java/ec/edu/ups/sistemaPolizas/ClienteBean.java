@@ -82,6 +82,7 @@ public class ClienteBean {
 
 		try {
 			on.guardarContacto(newCliente);
+			on.enviarMail(newCliente);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
