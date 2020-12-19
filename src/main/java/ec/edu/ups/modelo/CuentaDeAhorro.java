@@ -3,6 +3,7 @@ package ec.edu.ups.modelo;
 import java.io.Serializable;
 import java.util.Date;
 
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,6 +17,10 @@ import javax.persistence.OneToOne;
 public class CuentaDeAhorro implements Serializable {
 	
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id 
 	@Column(name="numero_cuenta")
 	private String numeroCuentaDeAhorro;
@@ -25,6 +30,12 @@ public class CuentaDeAhorro implements Serializable {
 	@OneToOne(fetch = FetchType.EAGER,cascade = {CascadeType.ALL })
 	@JoinColumn(name="cedula_cliente")
 	private Cliente cliente;
+	
+	
+	public CuentaDeAhorro() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 	public String getNumeroCuentaDeAhorro() {
